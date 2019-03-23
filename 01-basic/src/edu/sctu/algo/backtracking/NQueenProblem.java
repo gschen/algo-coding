@@ -1,12 +1,16 @@
-package edu.sctu.algo.basic;
+package edu.sctu.algo.backtracking;
 
 import edu.sctu.algo.utils.PrintUtils;
 
 public class NQueenProblem {
 
-    private int N = 4;
-    private int[][] board = new int[N][N];
+    private int N;
+    private int[][] board;
 
+    public NQueenProblem(int n) {
+        this.N = n;
+        this.board = new int[N][N];
+    }
 
     public boolean solve(int col) {
 
@@ -32,7 +36,6 @@ public class NQueenProblem {
 
     private boolean isSafe(int row, int col) {
 
-
         for (int i = 0; i < col; i++) {
             if (board[row][i] == 1)
                 return false;
@@ -53,17 +56,13 @@ public class NQueenProblem {
         return true;
     }
 
-    public void run(){
+    public void run() {
 
         solve(0);
-
         PrintUtils.printArray(board);
     }
 
-
     public static void main(String[] args) {
-
-
-        new NQueenProblem().run();
+        new NQueenProblem(8).run();
     }
 }

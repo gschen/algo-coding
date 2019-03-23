@@ -1,4 +1,4 @@
-package edu.sctu.algo.basic;
+package edu.sctu.algo.backtracking;
 
 import edu.sctu.algo.utils.PrintUtils;
 
