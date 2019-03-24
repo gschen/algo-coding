@@ -33,4 +33,14 @@ public class PrintUtils {
         }
         System.out.println();
     }
+
+    public static void printArray(String[] solution) {
+
+        for (int i = 0; i < solution.length && solution[i] != null; i++) {
+            System.out.print(String.format("%-4s", solution[i]));
+
+        }
+
+        System.out.println();
+    }
 }
