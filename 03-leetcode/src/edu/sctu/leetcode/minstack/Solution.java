@@ -1,4 +1,4 @@
-package edu.sctu.leetcode.stack.minstack;
+package edu.sctu.leetcode.minstack;
 
 
 import java.util.Stack;
