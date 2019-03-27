@@ -19,6 +19,8 @@ class Solution {
 
         ListNode head;
 
+
+
         head = l1;
         while (head != null) {
 
